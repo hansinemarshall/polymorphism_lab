@@ -22,4 +22,9 @@ public class TraybakeTest {
     void canGetFlavourDescription(){
         assertThat(traybake.flavourDescription()).isEqualTo("You have selected a Carrot traybake with Cream Cheese Frosting");
     }
+
+    @Test
+    void isHealthyOption(){
+        assertThat(traybake.isHealthyOption()).isEqualTo(true);
+    }
 }

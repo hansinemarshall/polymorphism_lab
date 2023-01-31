@@ -26,7 +26,7 @@ public abstract class Cake {
     public String flavourDescription(){
         return "You have selected a " + this.baseFlavour;
     }
-
+    // could make this an interface
     public void setHealthyOption(boolean healthyOption) {
         this.healthyOption = healthyOption;
     }
