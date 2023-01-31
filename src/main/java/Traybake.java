@@ -5,6 +5,10 @@ public class Traybake extends Cake{
         super(baseFlavour,healthyOption);
     }
 
+    public String eat(){
+        return "Keep calm and eat " + this.getClass().getName() + "s";
+    }
+
     public String icingFlavour(){
         return icing;
     }

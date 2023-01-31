@@ -7,6 +7,7 @@ public class WeddingCake extends CelebrationCake {
         super(baseFlavour,healthyOption);
     }
 
+
     public void setCakeTopper(boolean cakeTopper) {
         this.cakeTopper = cakeTopper;
     }
@@ -17,6 +18,10 @@ public class WeddingCake extends CelebrationCake {
 
     public String decorationMessage(){
         return "Just Married!";
+    }
+
+    public String decorationMessage(String coupleNames){
+        return "Congratulations " + coupleNames;
     }
 
     public String flavourDescription(){

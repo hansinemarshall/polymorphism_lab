@@ -35,4 +35,9 @@ public class CupcakeTest {
         assertThat(cupcake.flavourDescription()).isEqualTo("You have selected a Chocolate cupcake with Chocolate Chips ");
     }
 
+    @Test
+    void canEatCupcake(){
+        assertThat(cupcake.eat()).isEqualTo("Keep calm and eat Cupcakes");
+    }
+
 }

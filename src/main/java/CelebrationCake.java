@@ -10,6 +10,10 @@ public abstract class CelebrationCake extends Cake{
         super(baseFlavour,healthyOption);
     }
 
+    public String eat(){
+        return "Keep calm and eat " + this.getClass().getName() +"s";
+    }
+
     public String fillingFlavour(){
         return filling;
     }
@@ -29,6 +33,7 @@ public abstract class CelebrationCake extends Cake{
     public String decorationMessage(){
         return "No message";
     }
+
 
 
 

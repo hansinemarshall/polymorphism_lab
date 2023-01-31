@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public abstract class Cake {
+public abstract class Cake implements IFlavourDescribe {
 
 
     protected String baseFlavour;
@@ -12,9 +12,11 @@ public abstract class Cake {
         this.healthyOption = healthyOption;
     }
 
-    public String eat(){
-        return "Keep calm and eat cake";
-    }
+    public abstract String eat();
+
+//    {
+//        return "Keep calm and eat cake";
+//    }
 
     public String getBaseFlavour() {
         return this.baseFlavour;

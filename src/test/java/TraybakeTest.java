@@ -27,4 +27,10 @@ public class TraybakeTest {
     void isHealthyOption(){
         assertThat(traybake.isHealthyOption()).isEqualTo(true);
     }
+
+    @Test
+    void canEatTraybakes(){
+        assertThat(traybake.eat()).isEqualTo("Keep calm and eat Traybakes");
+    }
+
 }

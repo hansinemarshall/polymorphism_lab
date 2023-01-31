@@ -10,6 +10,10 @@ public class Cupcake extends Cake {
         this.toppings = new ArrayList<>();
     }
 
+    public String eat(){
+        return "Keep calm and eat " + this.getClass().getName() +"s";
+    }
+
 
     @Override
     public String flavourDescription() {

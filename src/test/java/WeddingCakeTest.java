@@ -19,7 +19,13 @@ public class WeddingCakeTest {
     }
 
     @Test
-    void decorationMessage(){
+    void decorationMessage__overloaded(){
+        String coupleNames = "Anthony and Cleopatra!";
+        assertThat(cake.decorationMessage(coupleNames)).isEqualTo("Congratulations Anthony and Cleopatra!");
+    }
+
+    @Test
+    void decorationMessage__default(){
         assertThat(cake.decorationMessage()).isEqualTo("Just Married!");
     }
 
@@ -39,6 +45,12 @@ public class WeddingCakeTest {
         cake.addFilling("Vanilla Frosting");
         assertThat(cake.fillingFlavour()).isEqualTo("Vanilla Frosting");
     }
+
+    @Test
+    void canEatWeddingCakes(){
+        assertThat(cake.eat()).isEqualTo("Keep calm and eat WeddingCakes");
+    }
+
 
 
 }
