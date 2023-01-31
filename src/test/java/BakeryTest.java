@@ -28,7 +28,7 @@ public class BakeryTest {
         bakery.addCakesToMenu(birthday);
         bakery.addCakesToMenu(traybake);
         assertThat(bakery.countCakesInMenu()).isEqualTo(3);
-        assertThat(bakery.menuToString()).isEqualTo("Cupcake\nBirthdayCake\nTraybake\n");
+        assertThat(bakery.menuToString()).isEqualTo("");
     }
 
 

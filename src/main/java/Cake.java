@@ -14,10 +14,6 @@ public abstract class Cake implements IFlavourDescribe {
 
     public abstract String eat();
 
-//    {
-//        return "Keep calm and eat cake";
-//    }
-
     public String getBaseFlavour() {
         return this.baseFlavour;
     }
